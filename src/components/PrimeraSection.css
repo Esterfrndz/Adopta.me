@@ -1,0 +1,65 @@
+
+.imagen img {
+    display: flex;
+    margin-left: 560px;
+    width: 720px;
+   
+    
+  }
+
+.Perro{
+   
+   
+    width: 310px;
+    padding-bottom: 20px;
+    
+  } 
+  
+ 
+
+
+
+.presion button{border: none; margin-right: 20px;
+    background-color: #f8f0e5;
+    font-size: 18px;
+    }
+    
+    .presion button:hover{
+        color: rgb(173, 177, 180);
+        text-decoration: underline;
+    }
+    
+    /* Container texto */
+
+    
+    .contentText p {
+        z-index: 1;
+        width: 700px;
+        color: rgba(129, 125, 125, 0.794);
+        margin-left: 50px;
+       
+    }
+
+    .contentText h2{
+margin-left: 50px;
+font-size: 60px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 700px;
+    }
+
+
+    
+    .col-md-8 {
+        flex: 10% 10% 50%; /* Ajusta este porcentaje según sea necesario */
+      }
+
+.contentInput button{
+/* background-color: #6ac2ac; */
+margin-left: 0px;
+
+}
+
+.contentInput input{
+    margin-left: 50px;
+
+}
