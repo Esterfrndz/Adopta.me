@@ -1,20 +1,47 @@
 
-.imagen img {
-    display: flex;
-    margin-left: 560px;
-    width: 720px;
-   
-    
-  }
 
-.Perro{
-   
-   
-    width: 310px;
-    padding-bottom: 20px;
-    
-  } 
+/* CONTENEDOR  */
+.row-container {
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: space-between; /* Espacio entre el texto y la imagen */
+  }
   
+  /* TITULO Y TEXTO  */
+  .left-section {
+    flex: 1; /* Ocupa el espacio restante disponible */
+    padding-right: 20px;
+  }
+  
+
+  /* IMAGEN */
+  .right-section {
+    display: inline-block; /* Para que el div se ajuste al tamaño de la imagen */
+    
+ 
+  }
+  
+  .right-section img {
+    width: 100%; /* Imagen se adapta al contenedor */
+    max-width: 900px; /* Controlas el tamaño máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+
+  /*  */
+  @media (max-width: 768px) {
+    .row-container {
+      flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+      align-items: center; /* Centra horizontalmente */
+    }
+  
+    .right-section {
+      margin-top: 20px; /* Añade espacio entre el texto y la imagen */
+    }
+  }
+  
+
+
  
 
 
@@ -31,7 +58,24 @@
     
     /* Container texto */
 
-    
+    .contentText button{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 80px;
+      margin-top: 50px;
+      width: 140px;
+      height: 45px;
+      /* background-color: rgb(215, 215, 38); */
+      background-color: rgb(232, 232, 21);
+      border:none;
+      color: black;
+      font-size: 15px;
+      font-weight: 700;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+    }
     .contentText p {
         z-index: 1;
         width: 700px;
@@ -43,8 +87,12 @@
     .contentText h2{
 margin-left: 50px;
 font-size: 60px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 width: 700px;
+font-weight: 600;
+justify-content: center;
+align-items: center;
+display: flex;
     }
 
 
